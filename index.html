@@ -5,29 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adens Portfolio</title>
     <link rel="stylesheet" href="Index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <video
-        autoplay
-        muted
-        loop
-        playsinline
-        src="karatePhotos/ScreenRecording_08-24-2026 20-41-43_1.mov"
-      ></video>
-
       <section id="nav">
-        <p>Aden Jansen</p>
-        <nav>
-          <ul>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Experience">Experience</a></li>
-            <li><a href="#Beyond">Beyond the screen</a></li>
-            <li><a href="#Contact">Contact</a></li>
-          </ul>
-        </nav>
+        <a href="#" class="logo"><span>Aden Jansen</span></a>
+        <ul class="nav-links">
+          <li><a href="#About">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#Beyond">Beyond the screen</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
       </section>
 
       <section>
@@ -49,10 +45,16 @@
           Degree <br />
           <b>BComputing</b>
         </p>
-        <a href="Aden_Jansen_CV.pdf" download="">
-          <b>&DownArrowBar;</b> Download CV</a
-        >
+        <a href="Aden_Jansen_CV.pdf" download=""> Download CV</a>
       </section>
+
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        src="karatePhotos/ScreenRecording_08-24-2026 20-41-43_1.mov"
+      ></video>
     </header>
 
     <main>
@@ -187,5 +189,7 @@
         </article>
       </section>
     </main>
+
+    <script src="index.js"></script>
   </body>
 </html>
