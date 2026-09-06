@@ -39,12 +39,10 @@ body {
 .logo:hover {
   transform: scale(1.1);
 }
-
 .nav-links {
   display: flex;
   text-wrap: nowrap;
   font-size: 1.3rem;
-
   gap: 2rem;
 }
 li a {
@@ -113,7 +111,7 @@ li a:hover::before {
   align-items: center;
   background-color: red;
   padding: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   color: white;
   transition: 0.3s ease-in-out;
 }
@@ -157,16 +155,18 @@ img {
   object-fit: cover;
   border-radius: 0.5rem;
   filter: grayscale(100%);
-  transition: 0.3s ease-in-out;
 }
 
 .BeyondImg:hover {
-  transform: scale(1.1);
   filter: none;
 }
 
 #Beyond article {
   position: relative;
+  transition: 0.3s ease-in-out;
+}
+#Beyond article:hover {
+  transform: scale(0.9);
 }
 
 .Beyondword {
@@ -174,4 +174,36 @@ img {
   bottom: 1rem;
   left: 1rem;
   font-size: 2rem;
+}
+
+/*=================== Contact ====================*/
+#Contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+#Contact article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  max-width: 90%;
+  border: white solid 0.2rem;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+/*=================== footer ====================*/
+footer {
+  background-color: rgba(238, 39, 39, 0.444);
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
 }
