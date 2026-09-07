@@ -29,7 +29,7 @@
 
     <section id="intro-page">
       <p>Software Developer / Cloud Engineer</p>
-      <h1>
+      <h1 id="introH1">
         <b>SOFTWAR<span class="IntroLetter">E</span> </b> <br />
         <b>DEVELOPE<span class="IntroLetter">R</span></b>
       </h1>
@@ -66,164 +66,272 @@
     </section>
 
     <section id="About">
-      <h1><b>About Me</b></h1>
-
-      <img src="./MePics/IMG_2381.jpg" alt="Picture of Aden Jansen" />
-      <article>
-        <p>Education</p>
-        <p>Where did i study</p>
-        <p>
-          <img src="./MePics/BlegiumCampus.jpeg" alt="Belgium Campus logo" />
-          Belgium Campus ITVersity: Bachelor of Computing years: 2025-2028
-        </p>
-      </article>
-
-      <p>
-        Motivated second-year Bachelor of Computing student at Belgium Campus
-        ITVersity with a strong interest in software development, web
-        technologies, and cloud computing applications. Quick to learn new tools
-        and frameworks, with hands-on personal project experience across web,
-        backend, and desktop applications. Seeking opportunities to apply and
-        grow my technical skills in a professional software development
-        environment.
-      </p>
+      <div id="about-container">
+        <img
+          src="./MePics/IMG_2381.jpg"
+          alt="Picture of Aden Jansen"
+          id="aboutMePic"
+        />
+        <article>
+          <h2>Education</h2>
+          <img
+            src="./MePics/BlegiumCampus.jpeg"
+            alt="Belgium Campus logo"
+            id="AboutBelgiumPic"
+          />
+          <p>
+            Belgium Campus ITVersity: Bachelor of Computing years: 2025-2028
+          </p>
+          <hr />
+          <p>
+            Motivated Bachelor of Computing student at Belgium Campus ITVersity
+            with a strong interest in software development, web technologies,
+            and cloud computing applications. Quick to learn new tools and
+            frameworks, with hands-on personal project experience across web,
+            backend, and desktop applications. Seeking opportunities to apply
+            and grow my technical skills in a professional software development
+            environment.
+          </p>
+        </article>
+      </div>
     </section>
 
     <section id="Skills">
-      <h1><b>Skills</b></h1>
-      <article>
-        <p>Languages</p>
-        <ul>
-          <li>Javascript</li>
-          <li>C#</li>
-          <li>Node.js</li>
-          <li>MySQL</li>
-          <li>Python</li>
-        </ul>
-      </article>
-
-      <article>
-        <p>Cloud and tools</p>
-        <ul>
-          <li>Microsoft Azure</li>
-          <li>Git/Github</li>
-        </ul>
-      </article>
-
-      <article>
-        <p>Foundations</p>
-        <ul>
-          <li>Database Design</li>
-          <li>Web and App Architecture</li>
-        </ul>
-      </article>
-
-      <article>
-        <p>Core strengths</p>
-        <ul>
-          <li>Problem sovler</li>
-          <li>Team work</li>
-          <li>Time managment</li>
-          <li>Critical thinker</li>
-        </ul>
-      </article>
+      <h1 class="section-title">Skills</h1>
+      <div id="skillsContainer">
+        <article>
+          <p class="skillsheading">Languages</p>
+          <i class="fa-brands fa-square-js"></i>
+          <i class="fa-brands fa-node"></i>
+          <i class="fa-brands fa-python"></i>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css"></i>
+          <p>C#</p>
+          <p>MySQL</p>
+        </article>
+        <hr />
+        <article>
+          <p class="skillsheading">Cloud and tools</p>
+          <i class="fa-brands fa-aws"></i>
+          <i class="fa-brands fa-git-alt"></i>
+          <i class="fa-brands fa-github"></i>
+        </article>
+        <hr />
+        <article>
+          <p class="skillsheading">Foundations</p>
+          <ul>
+            <li>Database Design</li>
+            <li>Web and App Architecture</li>
+          </ul>
+        </article>
+        <hr />
+        <article>
+          <p class="skillsheading">Core strengths</p>
+          <ul>
+            <li>Problem sovler</li>
+            <li>Team work</li>
+            <li>Time managment</li>
+            <li>Critical thinker</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
     <section id="Projects">
-      <h1><b>Projects</b></h1>
-      <h2>Univeristy</h2>
-      <h2>Personal</h2>
+      <p class="section-title">Projects</p>
+      <div id="ProjectGrid">
+        <article class="Porject-Card">
+          <img
+            src="./ProjectPics/CrisisConnect.png"
+            alt="CrisisConnect Project"
+          />
+          <h2>Crisis Connect</h2>
+          <p>
+            A multi-threaded C# console application for real-time disaster
+            response coordination. Features asynchronous dispatch management,
+            background emergency alerts, custom exception handling, and
+            thread-safe data logging.
+          </p>
+          <div class="btn-group">
+            <a
+              href="https://github.com/adenjansen2022-lang/CrisisConnect"
+              target="_blank"
+              >Github Repo</a
+            >
+          </div>
+        </article>
+
+        <article class="Porject-Card">
+          <img
+            src="./ProjectPics/BugTicketSystem.png"
+            alt="BugTicketSystem Project"
+          />
+          <h2>Bug Ticket System</h2>
+          <p>
+            A responsive web-based issue tracking system built with JavaScript
+            and Bootstrap. Enables full lifecycle management for software bugs
+            with priority tracking, user assignment, and persistent browser
+            storage.
+          </p>
+          <div class="btn-group">
+            <a
+              href="https://github.com/adenjansen2022-lang/Issue-Tracker"
+              target="_blank"
+              >Github Repo</a
+            >
+          </div>
+        </article>
+
+        <article class="Porject-Card">
+          <img src="./ProjectPics/FitForge.png" alt="FitForge Project" />
+          <h2>FitForge System</h2>
+          <p>
+            A modern fitness management platform designed to track workout
+            regimes, manage client profiles, and streamline exercise tracking
+            through an intuitive interactive user interface.
+          </p>
+          <div class="btn-group">
+            <a
+              href="https://github.com/adenjansen2022-lang/Loyal-customer-service-application"
+              target="_blank"
+              >Github Repo</a
+            >
+          </div>
+        </article>
+
+        <article class="Porject-Card">
+          <img src="./ProjectPics/WindFarm.png" alt="WindFarm Project" />
+          <h2>WindFarm Website</h2>
+          <p>
+            An educational static web application built with HTML5 and CSS Grid
+            exploring renewable energy concepts. Features structured interactive
+            lesson modules, knowledge testing quizzes, and academic references.
+          </p>
+          <div class="btn-group">
+            <a
+              href="https://github.com/adenjansen2022-lang/Ecosystem-wind-turbine-Website"
+              target="_blank"
+              >Github Repo</a
+            >
+          </div>
+        </article>
+      </div>
     </section>
 
     <section id="Experience">
-      <h1><b>Experience</b></h1>
-      <img
-        src="./Experience/Pepla software solutions.png"
-        alt="Pepla software solutions"
-        width="400px"
-      />
-      <p>
-        Gained hands-on, real-world software development experience during a
-        short-term (1 month) placement at Pepla Software Solutions 2025. Where
-        they had asked me to use React to build a timesheet plugin in Microsoft
-        Azure, which they could then save on costs and then in the future are
-        going to sell it to other companies.
-      </p>
+      <p class="section-title">Experience</p>
+      <div id="experienceGrid">
+        <article class="experienceGrid-card">
+          <h2>Pepla Software Solutions</h2>
+          <img
+            src="./Experience/Pepla software solutions.png"
+            alt="Pepla software solutions"
+            width="400px"
+          />
+          <p>
+            Gained hands-on, real-world software development experience during a
+            short-term (1 month) placement at Pepla Software Solutions 2025.
+            Where they had asked me to use React to build a timesheet plugin in
+            Microsoft Azure, which they could then save on costs and then in the
+            future are going to sell it to other companies.
+          </p>
+        </article>
+      </div>
     </section>
 
     <section id="Beyond">
-      <h1><b>Beyond the screen</b></h1>
+      <h1 class="section-title">Beyond the screen</h1>
       <div id="BeyondImgDiv">
         <article>
-        <img src="./karatePhotos/DSC08546.jpeg" alt="karate4" class="BeyondImg" />
-      <p class="Beyondword">Character</p>
+          <img
+            src="./karatePhotos/DSC08546.jpeg"
+            alt="karate4"
+            class="BeyondImg"
+          />
+          <p class="Beyondword">Character</p>
+        </article>
 
-      </article>
+        <article>
+          <img
+            src="./karatePhotos/DSC08532.jpeg"
+            alt="karate3"
+            class="BeyondImg"
+          />
+          <p class="Beyondword">Discpline</p>
+        </article>
 
-      <article>
-        <img src="./karatePhotos/DSC08532.jpeg" alt="karate3" class="BeyondImg" />
-      <p class="Beyondword">Discpline</p>
+        <article>
+          <img
+            src="./karatePhotos/DSC08518.jpeg"
+            alt="karate2"
+            class="BeyondImg"
+          />
+          <p class="Beyondword">Effort</p>
+        </article>
 
-      </article>
+        <article>
+          <img
+            src="./karatePhotos/DSC08536.jpeg"
+            alt="karate1"
+            class="BeyondImg"
+          />
+          <p class="Beyondword">Respect</p>
+        </article>
 
-      <article>
-        <img src="./karatePhotos/DSC08518.jpeg" alt="karate2" class="BeyondImg" />
-      <p class="Beyondword">Effort</p>
-      </article>
+        <article>
+          <img
+            src="./karatePhotos/1C39BA54-1A1D-46A6-AD8A-5E081A88BA11 (1).JPG"
+            alt="kumite1"
+            class="BeyondImg"
+          />
+          <p class="Beyondword">Self control</p>
+        </article>
 
-      <article>
-        <img src="./karatePhotos/DSC08536.jpeg" alt="karate1" class="BeyondImg" />
-      <p class="Beyondword">Respect</p>
-      </article>
-
-      <article>
-        <img
-        src="./karatePhotos/1C39BA54-1A1D-46A6-AD8A-5E081A88BA11 (1).JPG"
-        alt="kumite1"
-        class="BeyondImg"
-      />
-      <p class="Beyondword">Self control</p>
-      </article>
-
-      <article>
-        <img src="./karatePhotos/DSC08515.jpeg" alt="karate5" class="BeyondImg" />
-      <p class="Beyondword">Consistency</p>
-      </article>
+        <article>
+          <img
+            src="./karatePhotos/DSC08515.jpeg"
+            alt="karate5"
+            class="BeyondImg"
+          />
+          <p class="Beyondword">Consistency</p>
+        </article>
       </div>
     </section>
 
     <section id="Contact">
-      <h1><b>Contact</b></h1>
+      <h1 class="section-title">Contact</h1>
       <article>
         <p>Let's build something.</p>
         <p>
           Open to web development opportunities, cloud projects and, freelance
           collaborations.
         </p>
-        <a href="mailto:adenjansen2022@gmail.com" id="emial" target="_blank"></a>
-          <i class="fa-solid fa-envelope"></i>
-        </a>
+        <div id="ContactIcons">
+          <a href="mailto:adenjansen2022@gmail.com" id="emial" target="_blank"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
 
-        <a
-          href="https://github.com/adenjansen2022-lang"
-          target="_blank"
-          id="github-icon"
-        >
-          <i class="fa-brands fa-github"></i>
-        </a>
+          <a
+            href="https://github.com/adenjansen2022-lang"
+            target="_blank"
+            id="github-icon"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
 
-        <a
-          href="https://www.linkedin.com/in/aden-jansen-11b45637a/"
-          target="_blank"
-          id="github-icon"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
+          <a
+            href="https://www.linkedin.com/in/aden-jansen-11b45637a/"
+            target="_blank"
+            id="github-icon"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
       </article>
     </section>
 
     <footer>
-      <p> &copy; all rights reserved Aden Jansen</p>
+      <p>&copy;All Rights Reserved | Aden Jansen</p>
     </footer>
 
     <script src="index.js"></script>

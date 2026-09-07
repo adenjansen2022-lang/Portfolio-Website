@@ -11,6 +11,18 @@ body {
   background-color: black;
   color: white;
 }
+.section-title {
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  justify-content: center;
+  font-weight: 300;
+  background: linear-gradient(to left, rgb(235, 230, 230), rgb(219, 26, 26));
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
 
 /*=================== Header ====================*/
 
@@ -109,7 +121,8 @@ li a:hover::before {
   display: inline-flex;
   white-space: nowrap;
   align-items: center;
-  background-color: red;
+  /* background-color: red;*/
+  background: linear-gradient(to right, rgb(9, 8, 8), rgb(248, 55, 55));
   padding: 0.5rem;
   border-radius: 2rem;
   color: white;
@@ -138,6 +151,119 @@ img {
   height: auto;
 }
 
+#introH1 {
+  font-size: 4rem;
+  line-height: 0.9;
+}
+
+/*=================== About ====================*/
+#About {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 10%;
+}
+#about-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+#aboutMePic {
+  width: 28vw;
+  border-radius: 50%;
+}
+#about-container article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  font-size: 1.2rem;
+}
+#AboutBelgiumPic {
+  width: 15vw;
+  border-radius: 2rem;
+}
+
+/*=================== Experience ====================*/
+#Skills {
+  padding: 1rem 2rem;
+}
+
+/*=================== Projects ====================*/
+#Projects {
+  padding: 1rem 2rem;
+}
+#ProjectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.Porject-Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: baseline;
+  gap: 0.5rem;
+  border: white solid 0.2rem;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  transition: 0.2s ease-in-out;
+}
+.Porject-Card:hover {
+  transform: scale(1.02);
+  background-color: white;
+  color: black;
+}
+.Porject-Card img {
+  border-radius: 0.7rem;
+}
+.btn-group {
+  background: linear-gradient(to right, rgb(4, 4, 4), rgb(248, 55, 55));
+  border-radius: 2rem;
+  padding: 0.8rem;
+  transition: 0.3s ease-in-out;
+}
+.btn-group a {
+  color: rgb(251, 251, 251);
+}
+.btn-group:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to left, rgb(9, 8, 8), rgb(248, 55, 55));
+}
+
+/*=================== Experience ====================*/
+#Experience {
+  padding: 1rem 2rem;
+}
+#experienceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.experienceGrid-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid white 0.2rem;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  gap: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.experienceGrid-card:hover {
+  transform: scale(1.02);
+  background-color: white;
+  color: black;
+}
+.experienceGrid-card img {
+  border-radius: 3rem;
+}
+
 /*=================== Beyond the screen ====================*/
 #Beyond {
   padding: 3rem;
@@ -145,7 +271,7 @@ img {
 }
 #BeyondImgDiv {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
 }
 
@@ -163,7 +289,7 @@ img {
 
 #Beyond article {
   position: relative;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 #Beyond article:hover {
   transform: scale(0.9);
@@ -183,7 +309,6 @@ img {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  gap: 1rem;
 }
 #Contact article {
   display: flex;
@@ -196,6 +321,11 @@ img {
   border-radius: 0.7rem;
   padding: 1rem;
   font-size: 1.2rem;
+}
+#ContactIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 /*=================== footer ====================*/
