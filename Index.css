@@ -37,7 +37,7 @@ body {
   background-color: rgba(238, 39, 39, 0.444);
   backdrop-filter: blur(8px);
   color: black;
-  padding: 0.5rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 3rem;
   z-index: 1000;
 }
@@ -79,12 +79,13 @@ li a:hover::before {
 #menu-icon {
   font-size: 2rem;
   display: none;
+  color: white;
 }
 
 /*=================== Intro page ====================*/
 #intro-page {
   position: relative;
-  height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -121,7 +122,6 @@ li a:hover::before {
   display: inline-flex;
   white-space: nowrap;
   align-items: center;
-  /* background-color: red;*/
   background: linear-gradient(to right, rgb(9, 8, 8), rgb(248, 55, 55));
   padding: 0.5rem;
   border-radius: 2rem;
@@ -156,12 +156,20 @@ img {
   line-height: 0.9;
 }
 
+#intro-page-article-container {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
 /*=================== About ====================*/
 #About {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 2rem 10%;
+  height: 100vh;
+  justify-content: center;
 }
 #about-container {
   display: flex;
@@ -185,18 +193,45 @@ img {
   border-radius: 2rem;
 }
 
-/*=================== Experience ====================*/
+/*=================== Skills ====================*/
 #Skills {
   padding: 1rem 2rem;
+  height: 100vh;
+  justify-content: center;
 }
-
+#skillsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+#skillsContainer article img {
+  width: 8vw;
+  border: white solid 0.1rem;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+}
+#core-strength-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+#core-strength-list li {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
 /*=================== Projects ====================*/
 #Projects {
   padding: 1rem 2rem;
 }
 #ProjectGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(600px, 100%), 1fr));
   gap: 1.5rem;
 }
 .Porject-Card {
@@ -271,7 +306,7 @@ img {
 }
 #BeyondImgDiv {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
   gap: 1rem;
 }
 
@@ -309,6 +344,8 @@ img {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  height: 60vh;
+  justify-content: center;
 }
 #Contact article {
   display: flex;
@@ -327,6 +364,9 @@ img {
   flex-direction: row;
   gap: 1rem;
 }
+#Contact article p span {
+  color: red;
+}
 
 /*=================== footer ====================*/
 footer {
@@ -336,4 +376,170 @@ footer {
   color: white;
   font-size: 1.2rem;
   padding: 1rem;
+}
+
+/*=================== Mobile and tablet devices ====================*/
+@media (max-width: 1280px) {
+  #nav {
+    padding: 0.3rem 0.9rem;
+    gap: 2rem;
+  }
+  .nav-links {
+    font-size: 1rem;
+  }
+  #intro-page {
+    padding-top: 55rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+  }
+  #aboutMePic {
+    width: 35vw;
+  }
+  #AboutBelgiumPic {
+    width: 20vw;
+  }
+  #ProjectGrid {
+    grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
+  }
+}
+@media (max-width: 768px) {
+  #nav {
+    gap: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .nav-links {
+    font-size: 0.85rem;
+    gap: 1rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  #intro-page {
+    padding-top: 35rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+  }
+  #introH1 {
+    font-size: 3rem;
+  }
+  #intro-page-article {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+  #cv {
+    align-self: flex-start;
+    width: fit-content;
+  }
+
+  #About {
+    height: auto;
+    min-height: 100vh;
+    padding: 3rem 6%;
+  }
+  #about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  #about-container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #aboutMePic {
+    width: 45vw;
+  }
+  #AboutBelgiumPic {
+    width: 25vw;
+  }
+
+  #Skills {
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+  #skillsContainer article img {
+    width: 12vw;
+  }
+
+  #ProjectGrid {
+    grid-template-columns: 1fr;
+  }
+  #experienceGrid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+  #menu-icon {
+    display: block;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  #intro-page {
+    font-size: 1rem;
+    padding-top: 32rem;
+  }
+  #intro-page-article {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  #cv {
+    align-items: center;
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+  }
+
+  #introH1 {
+    font-size: 2rem;
+  }
+  #about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #about-container article {
+    font-size: 1rem;
+  }
+  #aboutMePic {
+    width: 50vw;
+
+    border-radius: 20px;
+  }
+
+  #skillsContainer article img {
+    width: 17vw;
+  }
+  .skillsheading {
+    font-size: 1.2rem;
+  }
+  #core-strength-list li {
+    font-size: 1rem;
+  }
+  #core-strength-list li i {
+    font-size: 1rem;
+  }
+  .Porject-Card {
+    font-size: 1rem;
+  }
+  .experienceGrid-card {
+    font-size: 1rem;
+  }
+  #Contact article {
+    font-size: 1rem;
+  }
+  .Beyondword {
+    font-size: 1.5rem;
+  }
 }

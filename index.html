@@ -9,6 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
   <body>
     <header>
@@ -44,16 +50,18 @@
           Degree <br />
           <b>BComputing</b>
         </p>
-        <a href="Aden_Jansen_CV.pdf" target="_blank" id="cv"
-          ><span>Download CV</span></a
-        >
-        <a
-          href="https://github.com/adenjansen2022-lang"
-          target="_blank"
-          id="github-icon"
-        >
-          <i class="fa-brands fa-github"></i>
-        </a>
+        <div id="intro-page-article-container">
+          <a href="Aden_Jansen_CV.pdf" target="_blank" id="cv"
+            ><span>Download CV</span></a
+          >
+          <a
+            href="https://github.com/adenjansen2022-lang"
+            target="_blank"
+            id="github-icon"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
       </article>
       <video
         autoplay
@@ -100,38 +108,60 @@
       <h1 class="section-title">Skills</h1>
       <div id="skillsContainer">
         <article>
-          <p class="skillsheading">Languages</p>
-          <i class="fa-brands fa-square-js"></i>
-          <i class="fa-brands fa-node"></i>
-          <i class="fa-brands fa-python"></i>
-          <i class="fa-brands fa-html5"></i>
-          <i class="fa-brands fa-css"></i>
-          <p>C#</p>
-          <p>MySQL</p>
+          <h2 class="skillsheading">Languages</h2>
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
+          />
         </article>
         <hr />
         <article>
-          <p class="skillsheading">Cloud and tools</p>
-          <i class="fa-brands fa-aws"></i>
-          <i class="fa-brands fa-git-alt"></i>
-          <i class="fa-brands fa-github"></i>
+          <h2 class="skillsheading">Cloud and tools</h2>
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain.svg"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+          />
         </article>
         <hr />
         <article>
-          <p class="skillsheading">Foundations</p>
-          <ul>
-            <li>Database Design</li>
-            <li>Web and App Architecture</li>
-          </ul>
-        </article>
-        <hr />
-        <article>
-          <p class="skillsheading">Core strengths</p>
-          <ul>
-            <li>Problem sovler</li>
-            <li>Team work</li>
-            <li>Time managment</li>
-            <li>Critical thinker</li>
+          <h2 class="skillsheading">Core strengths</h2>
+          <ul id="core-strength-list">
+            <li><i class="fa-solid fa-puzzle-piece"></i> Problem solver</li>
+            <li><i class="fa-solid fa-people-group"></i> Team work</li>
+            <li><i class="fa-solid fa-clock"></i> Time management</li>
+            <li><i class="fa-solid fa-brain"></i> Critical thinker</li>
           </ul>
         </article>
       </div>
@@ -301,7 +331,10 @@
     <section id="Contact">
       <h1 class="section-title">Contact</h1>
       <article>
-        <p>Let's build something.</p>
+        <p>
+          Let's build something <span><b>TOGETHER</b></span
+          >.
+        </p>
         <p>
           Open to web development opportunities, cloud projects and, freelance
           collaborations.
