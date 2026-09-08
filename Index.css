@@ -88,8 +88,10 @@ li a:hover::before {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 1rem;
-  padding-top: 35rem;
+  /*padding-top: 35rem;*/
+  padding-bottom: 3rem;
   padding-left: 3rem;
   padding-right: 3rem;
   font-size: 1.5rem;
@@ -388,9 +390,10 @@ footer {
     font-size: 1rem;
   }
   #intro-page {
-    padding-top: 55rem;
+    /*padding-top: 55rem;*/
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-bottom: 2rem;
     font-size: 1.2rem;
   }
   #aboutMePic {
@@ -421,9 +424,10 @@ footer {
   }
 
   #intro-page {
-    padding-top: 35rem;
+    /*padding-top: 35rem;*/
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-bottom: 2rem;
     font-size: 1.2rem;
   }
   #introH1 {
@@ -506,7 +510,8 @@ footer {
   }
   #intro-page {
     font-size: 1rem;
-    padding-top: 32rem;
+    /*padding-top: 30rem;*/
+    padding-bottom: 1.5rem;
   }
   #intro-page-article {
     flex-direction: column;
