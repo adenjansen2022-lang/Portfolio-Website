@@ -452,6 +452,10 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+  #about-container article hr {
+    width: 100%;
+    align-self: stretch;
+  }
   #about-container article {
     display: flex;
     flex-direction: column;
