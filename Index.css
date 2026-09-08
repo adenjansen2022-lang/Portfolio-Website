@@ -478,11 +478,28 @@ footer {
   }
 }
 @media (max-width: 600px) {
-  .nav-links {
-    display: none;
-  }
   #menu-icon {
     display: block;
+  }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    color: white;
+    background-color: rgba(238, 39, 39, 0.444);
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 3rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links li {
+    margin-top: 1.5rem;
+    padding: 0.3rem;
+    font-size: 1rem;
   }
   .section-title {
     font-size: 2rem;
