@@ -494,8 +494,8 @@ footer {
     top: 100%;
     margin-top: 1rem;
     padding: 0.5rem;
-    color: white;
-    background-color: rgba(238, 39, 39, 0.444);
+    color: black;
+    background-color: rgba(120, 40, 40, 0.959);
     display: none;
     flex-direction: column;
     text-align: center;
