@@ -272,7 +272,7 @@ img {
 }
 
 /*=================== Experience ====================*/
-#Experience {
+/*#Experience {
   padding: 1rem 2rem;
 }
 #experienceGrid {
@@ -299,6 +299,40 @@ img {
 }
 .experienceGrid-card img {
   border-radius: 3rem;
+}*/
+
+#Experience {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+#experienceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+.experienceGrid-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: solid white 0.2rem;
+  border-radius: 0.7rem;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  gap: 1rem;
+  transition: 0.2s ease-in-out;
+}
+.experienceGrid-card:hover {
+  transform: scale(1.02);
+  background-color: white;
+  color: black;
+}
+.experienceGrid-card img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 1rem;
 }
 
 /*=================== Beyond the screen ====================*/
